@@ -18,8 +18,20 @@ layout: default
         {%- endif %}
         </h1>
         {%- endif %}
+        {%- if page.dateline==true %}
+        <p><em>
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+           {{ post.date | date: site.date_format }}</time> 
+        </em></p>
+        {% endif %}
+        {%- if page.byline==true %}
+        {% include contributor-minitiles-page.html contributors_list=page.contributors sort=false%}
+        {%- endif %}
         {%- if page.summary %}
         <div class="summary">{{page.summary}}</div>
+        {%- endif %}
+        {%- if page.dateline or page.byline or page.summary %}
+        <hr>
         {%- endif %}
     </div>
     {%- if page.toc or page.toc == nil or page.page_img %}

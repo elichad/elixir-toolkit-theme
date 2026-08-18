@@ -1,6 +1,6 @@
 ---
 title:  "Example Blog Post 2"
-contributors: ["Short Example Contributor"]
+contributors: ["Short Example Contributor", "Long Example Contributor"]
 date: 2026-08-01
 ---
 
