@@ -51,6 +51,8 @@ subitems:
         url: /events
       - title: News
         url: /news
+      - title: Blog
+        url: /blog
       - title: Section overview
         url: /overview_tiles
         subitems:
@@ -76,4 +78,3 @@ subitems:
     icon: icon-triangle-alert
     url: /404
     hr: true
-  

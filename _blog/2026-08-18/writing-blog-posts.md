@@ -23,6 +23,23 @@ date: 2026-06-18
 ---
 ```
 
+## Including internal links
+
+If you want to link to another page on the website, or from another page to a blog post, format the link as follows:
+
+```
+{% raw %}
+[About ETT]({{baseurl}}{% link pages/about/about.md %})
+{% endraw %}
+```
+
+[About ETT]({{baseurl}}{% link pages/about/about.md %})
+
+Here the path should be relative to the root folder of the source code. If your site does not have `baseurl` set in `_config.yml`, you can remove the `{{ baseurl }}` part.
+
+This formatting is necessary because the blog posts have automatically-generated permalinks that don't match the location of the Markdown files in the folder structure, so using a relative path to another page doesn't work the same as in other parts of the website. This format lets Jekyll handle setting the correct URL for the linked page.
+
+External pages can be linked in the usual fashion: `[link text](url)`.
 
 ## Including images
 
@@ -45,20 +62,6 @@ _blog/
 
 {% include image.html file="blog_image.svg" caption="Figure 1. The ELIXIR logo." alt="ELIXIR logo" max-width="10" %}
 
-## Including internal links
+## Markdown cheat sheet
 
-If you want to link to another page on the website, format the link as follows:
-
-```
-{% raw %}
-[About ETT]({{baseurl}}{% link pages/about/about.md %})
-{% endraw %}
-```
-
-[About ETT]({{baseurl}}{% link pages/about/about.md %})
-
-Here the path should be relative to the root folder of the source code. If your site does not have `baseurl` set in `_config.yml`, you can remove the `{{ baseurl }}` part.
-
-This formatting is necessary because the blog posts have automatically-generated permalinks that don't match the location of the Markdown files in the folder structure, so using a relative path to another page doesn't work as you might expect. This format lets Jekyll handle setting the correct URL for the linked page.
-
-External pages can be linked in the usual fashion: `[link text](url)`.
+For everything else, see the [Markdown cheat sheet]({% link pages/documentation/markdown_cheat_sheet.md %}).
