@@ -63,7 +63,6 @@ defaults:
     values:
       layout: "page"
       sidebar: blog # show separate sidebar for the blog
-      type: blog_post
       dateline: true # show date below title
 
 plugins:
