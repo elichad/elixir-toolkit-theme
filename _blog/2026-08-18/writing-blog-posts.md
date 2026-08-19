@@ -11,7 +11,7 @@ date: 2026-08-18
 1. Set the filename to a short title or description of your post (replace spaces with hyphens), followed by `.md` - e.g. `title-of-your-post.md`.
 1. Update the "front matter" (the part between `---` at the top of the document) as follows:
     1. Add a `title` for the post. This will be used as the first heading on the rendered page.
-    1. Add `contributors`s to the array, separated by commas, e.g. `["Person A", "Person B"]. See [Contributor page](TODO).
+    1. Add `contributors`s to the array, separated by commas, e.g. `["Person A", "Person B"]`. See [Contributor page](TODO).
     1. Change the `date` to the intended publication date in `yyyy-mm-dd` format. This should match the name of the folder.
 
 Example front matter:
