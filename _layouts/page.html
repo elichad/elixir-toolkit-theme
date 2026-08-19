@@ -21,7 +21,7 @@ layout: default
         {%- if page.dateline==true %}
         <p><em>
             <time datetime="{{ post.date | date_to_xmlschema }}">
-           {{ post.date | date: site.date_format }}</time> 
+           {{ page.date | date: site.date_format }}</time> 
         </em></p>
         {% endif %}
         {%- if page.byline==true %}
