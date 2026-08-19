@@ -8,6 +8,9 @@
            {{ post.date | date: site.date_format }}</time> 
       </em></p>
       {% include contributor-minitiles-page.html contributors_list=post.contributors sort=false%}
+      {%- if post.summary %}
+        <div class="summary">{{post.summary}}</div>
+      {%- endif %}
     </li>
   {% endfor %}
 </ul>

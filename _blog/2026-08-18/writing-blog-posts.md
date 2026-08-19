@@ -2,6 +2,7 @@
 title:  "Writing a blog post - template"
 contributors: ["Eli Chadwick"]
 date: 2026-08-18
+summary: How to set up a new blog post, including special behavior for links and images.
 ---
 
 ## Setting up the file
