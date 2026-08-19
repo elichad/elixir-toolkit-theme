@@ -24,13 +24,10 @@ layout: default
            {{ page.date | date: site.date_format }}</time> 
         </em></p>
         {% endif %}
-        {%- if page.byline==true %}
-        {% include contributor-minitiles-page.html contributors_list=page.contributors sort=false%}
-        {%- endif %}
         {%- if page.summary %}
         <div class="summary">{{page.summary}}</div>
         {%- endif %}
-        {%- if page.dateline or page.byline or page.summary %}
+        {%- if page.dateline or page.summary %}
         <hr>
         {%- endif %}
     </div>
