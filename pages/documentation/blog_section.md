@@ -30,7 +30,7 @@ All items in the collection can be retrieved in a template using `site.blog`. By
 
 Create a blog landing page with the following content:
 
-```
+```markdown
 ---
 title: Blog
 description: Latest updates from the ETT community
@@ -44,9 +44,18 @@ toc: false
 {% endraw %}
 ```
 
-The `blog` sidebar and blog post feed are automatically populated. 
+Also create a blog sidebar in `_data/sidebars/blog.yml`:
 
-It's recommended to add this page to the [top navigation](navigation_structures#top-navigation) since it uses a different sidebar.
+```yaml
+title: Blog
+title_url: blog
+subitems:
+  # leave empty - this list is populated automatically when the site is generated
+```
+
+The `blog` sidebar and blog post feed are automatically populated (see the [example Blog page](blog)).
+
+It's recommended to add the blog landing page to the [top navigation](navigation_structures#top-navigation) since it uses a different sidebar.
 
 ## Creating a post
 
